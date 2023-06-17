@@ -1,0 +1,101 @@
+Tags:-
+
+COMMENT TAG:
+The comment tag is used to insert comments in the source code. 
+<!-- --> 
+Comments are not displayed in the browser.
+we can use comments to explain our code.
+we can also use the comment tag to "hide" scripts from browsers.
+The comment tag does not support any attributes.
+
+<!DOCTYPE>
+All HTML documents must start with a <!DOCTYPE> declaration.
+The declaration is not an HTML tag.
+It is an "information" to the browser about what document type to expect.
+In HTML 5, the declaration is:  <!DOCTYPE html>
+
+HYPERLINK TAG:
+<a>
+The <a> tag defines a hyperlink, which is used to link from one page to another.
+The most important attribute of the <a> element is the href attribute,
+which indicates the link's destination.
+attributes of link:
+1.href(URL) - Specifies the URL of the page the link goes to
+2.download(filename) - Specifies that the target will be downloaded when a user clicks on the hyperlink
+3.hreflang(language_code) - Specifies the language of the linked document
+4.media(media_query) - Specifies what media/device the linked document is optimized for
+5.ping(list_of_URLs) - Specifies a space-separated list of URLs to which, when the link is followed, 
+                       post requests with the body ping will be sent by the browser (in the background).
+                       Typically used for tracking.
+6.refferpolicy - Specifies which referrer information to send with the link
+7.rel - Specifies the relationship between the current document and the linked document
+8.target - Specifies the relationship between the current document and the linked document
+9.type(media_type) - Specifies the media type of the linked document
+
+ABBRIVATION AND ACRONYM TAG:
+<abbr>
+The <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+we can use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.
+EXAMPLE:  <p> The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+ADDRESS TAG:
+<address>
+The <address> tag defines the contact information for the author/owner of a document or an article.
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+The text in the <address> element usually renders in italic, 
+and browsers will always add a line break before and after the <address> element.
+
+AREA TAG:
+<area>
+The <area> tag defines an area inside an image map (an image map is an image with clickable areas).
+<area> elements are always nested inside a <map> tag.
+EXAMPLE:
+ <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map> 
+The usemap attribute in <img> is associated with the <map> element's name attribute,
+and creates a relationship between the image and the map.
+
+AUDIO TAG:
+<audio>
+The <audio> tag is used to embed sound content in a document, such as music or other audio streams.
+The <audio> tag contains one or more <source> tags with different audio sources.
+The browser will choose the first source it supports.
+EXAMPLE:
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The audio element</h1>
+<p>Click on the play button to play a sound:</p>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+</body>
+</html>
+
+BOLD TEXT TAG:
+<b>
+The <b> tag specifies bold text without any extra importance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
