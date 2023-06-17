@@ -1,0 +1,158 @@
+There are two types of elements:
+Inline and block
+
+inline element - does not start on a new line and it only takes up as much width as necessary.
+<div> element - it is a block-level and is often used as a container for other HTML elements.
+<span> element - it is an inline container used to mark up a part of a text, or a part of a document.
+
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin)
+before and after the element. 
+A block-level element always takes up the full width available
+
+
+Difference Between Inline and Block Elements in HTML
+
+Block elements always start from a new line. 
+Inline elements never start from a new line. 
+Block elements cover space from left to right as far as it can go. 
+Inline elements only cover the space as bounded by the tags in the HTML element.
+					
+examples of block-level elements in HTML:
+<address> - The <address> tag defines the contact information for the author/owner of a document or an article.
+
+<article> - The <article> tag specifies independent, self-contained content.
+
+<aside> - The <aside> tag defines some content aside from the content it is placed in.
+
+<blockquote> - The <blockquote> tag specifies a section that is quoted from another source.
+
+<canvas> - The <canvas> tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+
+<dd> - The <dd> tag is used to describe a term/name in a description list.
+
+<div> - The <div> tag defines a division or a section in an HTML document.
+
+<dl> - The <dl> tag defines a description list.
+
+<dt> - The <dt> tag defines a term/name in a description list.
+
+<fieldset> - The <fieldset> tag is used to group related elements in a form.
+             The <fieldset> tag draws a box around the related elements.
+
+<figcaption> - The <figcaption> tag defines a caption for a <figure> element.
+
+<figure> - The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+
+<footer> - The <footer> tag defines a footer for a document or section.
+
+<form> - The <form> tag is used to create an HTML form for user input.
+
+<h1>-<h6> - The <h1> to <h6> tags are used to define HTML headings.
+
+<header> - The <header> element represents a container for introductory content or a set of navigational links.
+
+<hr> - The <hr> tag defines a thematic break in an HTML page.
+
+<li> - The <li> tag defines a list item.
+
+<main> - The <main> tag specifies the main content of a document.
+
+<nav> - The <nav> tag defines a set of navigation links.
+
+<noscript> - The <noscript> tag defines an alternate content to be displayed to users
+             that have disabled scripts in their browser or have a browser that doesn't support script.
+
+<ol> - The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
+
+<p> - The <p> tag defines a paragraph.
+
+<pre> - The <pre> tag defines preformatted text.
+
+<section> - The <section> tag defines a section in a document.
+
+<table> - The <table> tag defines an HTML table.
+
+<tfoot> - The <tfoot> tag is used to group footer content in an HTML table.
+
+<ul> - The <ul> tag defines an unordered (bulleted) list.
+
+<video> - The <video> tag is used to embed video content in a document, such as a movie clip or other video streams.
+
+
+examples of inlineelements in HTML:
+
+<a> - The <a> tag defines a hyperlink, which is used to link from one page to another.
+
+<abbr> - The <abbr> tag defines an abbreviation like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+
+<acronym> - The <acronym> tag was used in HTML 4 to define an acronym.
+            An acronym or abbreviation should be marked up with the <abbr> tag.
+
+<b> - The <b> tag specifies bold text without any extra importance.
+
+<bdo> - The <bdo> tag is used to override the current text direction.
+
+<big> - The <bdo> tag is used to override the current text direction.
+
+<br - The <br> tag inserts a single line break.
+      The <br> tag is useful for writing addresses or poems.
+      The <br> tag is an empty tag which means that it has no end tag.
+
+<button> - The <button> tag defines a clickable button.
+
+<cite> - The <cite> tag defines the title of a creative work.
+
+<code - The <code> tag is used to define a piece of computer code. 
+        The content inside is displayed in the browser's default monospace font.
+
+<dfn> - The <dfn> tag stands for the "definition element", 
+        and it specifies a term that is going to be defined within the content.
+
+<em> - The <em> tag is used to define emphasized text.    
+       The content inside is typically displayed in italic.
+
+<i> - The <em> tag is used to define emphasized text.
+      The content inside is typically displayed in italic.
+
+<img> - The <img> tag is used to embed an image in an HTML page.
+
+<input> - The <input> tag specifies an input field where the user can enter data.
+
+<kbd> - The <kbd> tag is used to define keyboard input. 
+
+<label> - The <label> tag defines a label for several elements.
+
+<map>- The <map> tag is used to define an image map.  
+       An image map is an image with clickable areas.
+
+<object> - The <map> tag is used to define an image map. An image map is an image with clickable areas.
+
+<output> - The <output> tag is used to represent the result of a calculation (like one performed by a script).
+
+<q> - The <q> tag defines a short quotation.
+
+<samp> - The <samp> tag is used to define sample output from a computer program. 
+
+<script> - The <script> tag is used to embed a client-side script (JavaScript).
+
+<select> - The <select> element is used to create a drop-down list.
+
+<small> - The <small> tag defines smaller text.
+
+<span> - The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+
+<strong> - The <strong> tag is used to define text with strong importance.
+
+<sub> - The <sub> tag defines subscript text.
+
+<sup> - The <sup> tag defines superscript text. 
+
+<textarea> - The <textarea> tag defines a multi-line text input control.
+
+<time> - The <time> tag defines a specific time (or datetime).
+
+<tt> - The <tt> tag was used in HTML 4 to define teletype text.
+
+<var> - The <var> tag is used to defines a variable in programming or in a mathematical expression.
+
+
