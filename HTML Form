@@ -1,0 +1,273 @@
+HTML FORMS:-
+
+ HTML uses predefined tags and elements that tell the browser how to properly display the content on the screen, and form is one of them. 
+ 
+ <form> is an HTML element to collect input data containing interactive controls.
+ 
+ Form is used to collect data's from users.
+ 
+  It provides facilities to input text, number, values, email, password, and control fields such as checkboxes, radio buttons, submit buttons, etc
+  
+  OR in other words, form is a container that contains input elements like text, email, number, radio buttons, checkboxes, submit buttons, etc.
+  
+  Forms are created by placing input fields within paragraphs, preformatted text, lists and tables. This gives considerable flexibility in designing the layout of forms. 
+
+<form> - It defines an HTML form to enter inputs by the user side.
+
+
+Form elements:
+1. <lable>
+The <label> tag is used to specify a label for an <input> element of a form.
+It adds a label to a form like, name, address, email, password etc..
+
+2.<input>
+<input>: It is used to get input data from the form in various types .
+Like it leave a space for user to fill their detalis what we asked in the lable.
+In the input element we need to add the 'type' attribute.
+The type attribute tells the input should be which type.
+The default value of the type attribute is “text”.
+Syntax: <input type="text" />
+We can change the type value text to password to get the input password 
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <h2>Welcome To GFG</h2>
+    <form>
+        <p> <label> Username : <input type="text" /> </label> </p>
+       <p><label>Password : <input type="password" /></label  </p>
+        <p> <button type="submit">Submit</button> </p>
+</form>
+</body>
+</html>
+
+3.<select>
+HTML <select> tag is used to create a drop down list with multiple options. 
+ The <option> element is nested within <select> tag for defining options in a list.
+The <optgroup> element can be used for grouping related options in a list.
+EXAMPLE:
+<body>    
+ <h2>Example of select tag</h2>  
+ <form>  
+    <label>Choose your Favorite city in India</label>  
+    <select>  
+        <option>New Delhi</option>  
+        <option>Indore</option>  
+        <option>Jaipur</option>  
+        <option>Jodhpur</option>  
+        <option>Chandigarh</option>  
+        <option>Mumbai</option>  
+        <option>Bengaluru</option>  
+        <option>Lucknow</option>  
+        <option>Amritsar</option>  
+  </select>  
+ </form>  
+</body>  
+
+4.<optgroup>
+HTML <optgroup> tag is used to group related <options> in a drop down list within <select> element.
+Using <optgroup> tag with <select> makes easier to access the dropdown list especially if list has large number of options.
+EXAMPLE-
+<label>Select your favourite brand</label><br>  
+<select>  
+          <optgroup label="Laptop Maufacturur">  
+        <option value="dell">Dell</option>  
+        <option value="hp">HP</option>  
+        <option value="lenovo">Lenovo</option>  
+        <option value="acer">Acer</option>  
+     </optgroup>  
+         <optgroup label="Mobile Manufacturer">  
+        <option value="apple">Apple</option>  
+        <option value="nokia">Nokia</option>  
+        <option value="samsung">Samsung</option>  
+        <option value="coolpad">Coolpad</option>       
+            </optgroup>  
+</select>  
+
+5.<textarea>
+<textarea>: It is used to get input long text content like it is used to add comments or reviews, or addresses to the form(multi-line text input)
+It can hold unlimited number of characters and the texts are displayed in a fixed-width font (usually courier).
+
+attributes- name, cols,rows
+the name attribute is used to reference the textarea data after it is sent to a server.
+The size of the HTML textarea is defined by <cols> and <rows> attribute, or it can also be defined through CSS height and width properties.
+EXAMPLE-
+<textarea name= "welcome message" rows="9" cols="70">  
+Add your welcome message.
+</textarea>  
+
+6.<fieldset>
+HTML <fieldset> tag is used to group the logically related fields/labels contained within an HTML form.
+It is used to draw a box around other form elements and group the related data.
+The use of this tag is optional while creating an HTML form but using <filedset>, it is easy to understand the purpose of grouped elements of form.
+<legend> is used to write the purpose like a heading of the box we draw 
+The <legend> tag is used with the <fieldset> element as a first child to define the caption for the grouped related fields.
+EXAMPLE:
+ <form>  
+     <fieldset>  
+        <legend>User basic information:</legend>  
+        <label>First Name</label><br>  
+        <input type="text" name="fname"><br>  
+        <label>Last Name</label><br>  
+        <input type="text" name="lname"><br>  
+        <label>Enter Email</label><br>  
+        <input type="email" name="email"><br><br>  
+     </fieldset><br>  
+    <label class="tx">Enter your feedback:</label><br>  
+    <textarea class="tx" cols="30"></textarea><br><br>  
+     <input  class="tx" type="Submit"><br>  
+  </form>  
+
+7.<datalist>
+The HTML <datalist> tag is is used to provide an auto complete feature on form element.
+t provides a list of predefined options to the users to select data.
+The <datalist> tag should be used with an <input< element that contains a "list" attribute. The value of "list" attribute is linked with the datalist id.
+EXAMPLE:
+<label>  
+ Enter your favorite cricket player: Press any character<br />  
+ <input type="text" id="favCktPlayer" list="CktPlayers">  
+ <datalist id="CktPlayers">  
+ <option value="Sachin Tendulkar">  
+ <option value="Brian Lara">  
+ <option value="Jacques Kallis">   
+ <option value="Ricky Ponting">   
+ <option value="Rahul Dravid">   
+ <option value="Shane Warne">   
+ <option value="Rohit Sharma">   
+ <option value="Donald Bradman">   
+ <option value="Saurav Ganguly ">   
+ <option value="AB diVilliers">   
+ <option value="Mahendra Singh Dhoni">   
+ <option value="Adam Gilchrist">  
+ </datalist>  
+</label>  
+
+
+<button>
+The <button> tag is used to create a clickable button within HTML form on your webpage.
+ You can put content like text or image within the <button>........</button> tag.
+ You should always specify the type attribute for a <button> tag. 
+ Different browsers use different default type for the button element.
+HTML Button tag can be used inside and outside the form.
+If you use it inside the form, it works as the submit button.
+If you use it outside the form, you can call JavaScript function on it.
+ You can also use it as reset button.
+ 
+ SUBMIT
+<form>  
+Enter Name:<input type="text" name="name"/><br/>  
+<button>Submit</button>  
+</form>  
+
+ RESTART
+ <form>  
+Enter Name:<input type="text" name="name"/><br/>  
+<button type="reset">reset</button>  
+</form>  
+
+
+Radio Button in an HTML Form:
+ratio button is used to select he label like gender : male frmale.
+To create a ratio button, we use three attributes in the input elemnet.
+<input type="ratio" name="gender" value = "male"/>
+Note: The radio button must have shared the same name(can we give diferent values but same name)to be treated as a group. 
+EXAMPLE-
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+ 
+<body>
+    <h2>Select your gender</h2>
+    <form>
+        <label>Male<input type="radio"
+                          name="gender"
+                          value="male" />
+          </label>
+        <label>Female<input type="radio"
+                            name="gender"
+                            value="female" />
+          </label>
+    </form>
+</body>
+</html>
+
+
+Checkbox in an HTML Form:
+To create a checkbox in an HTML form, we use the <input> tag followed by the input type checkbox.
+ It is a square box to tick to activate this. It used to choose more options at a time. 
+
+Syntax:
+<input type="checkbox" name="select_box_name" value="select_box_value" />
+EXAMPLE:
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+
+<body>
+	<h2>Choose Language</h2>
+<form>
+ul style="list-style-type:none;">
+<li><input type="checkbox"
+name="language"
+value="hindi" />
+Hindi
+</li>
+			
+<li><input type="checkbox"	
+name="language"
+value="english" />
+English
+</li>
+
+<li><input type="checkbox"
+name="language"
+value="sanskrite" />
+Sanskrit
+</li>
+
+</ul>
+</form>
+</body>
+</html>
+
+
+Combobox in an HTML Form:
+Combobox in an HTML Form
+Combobox is used to create a drop-down menu in your form which contains multiple options. So, to create a Combobox in an HTML form, we use the <select> tag with <option> tag. It is also known as a drop-down menu. 
+
+Syntax:
+
+<select name="select_box_name">
+      <option value="value1">option1</option>
+      <option value="value2">option2</option>
+      <option value="value3">option3</option>
+</select>
+
+
+Submit button in an HTML Form:
+In the HTML form, submit button is used to submit the details of the form to the form handler. 
+A form handler is a file on the server with a script that is used to process input data.  
+ <button type="submit">submit</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
