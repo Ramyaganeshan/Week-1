@@ -1,0 +1,189 @@
+Tags:-
+
+All HTML tags must enclosed within < > these brackets.
+Every tag in HTML perform different tasks.
+
+Syntax
+<tag> content </tag>
+
+Unclosed HTML Tags
+Some HTML tags are not closed, for example br and hr.
+<br> Tag: br stands for break line, it breaks the line of the code.
+<hr> Tag: hr stands for Horizontal Rule. This tag is used to put a line across the webpage.
+
+HTML Text Tags:
+<p>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <strong>, <em>, <abbr>, <acronym>, <address>, <bdo>, <blockquote>, <cite>, <q>, <code>, <ins>, <del>, <dfn>, <kbd>, <pre>, <samp>, <var> and <br>
+
+1.<p>-it is used to type a paragraph.
+2.<h1>to<h2> - it is used to give an headin to the paragarah.
+3.<strong> - this element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.
+Note: The <strong> element is for content that is of greater importance, while the <b> element is used to draw attention to text without indicating that it's more important.
+4.<em> - The <em> element is for words that have a stressed emphasis compared to surrounding text, which is often limited to a word or words of a sentence and affects the meaning of the sentence itself.
+*Typically this element is displayed in italic type. However, it should not be used to apply italic styling
+5.<abbr> - The <abbr> HTML element represents an abbreviation or acronym.
+6.<address> - The <address> HTML element indicates that the enclosed HTML provides contact information for a person or people, or for an organization.
+EXAMPLE- 
+<address>
+  You can contact author at
+  <a href="http://www.somedomain.com/contact"> www.somedomain.com</a>.<br />
+  If you see any bugs, please
+  <a href="mailto:webmaster@somedomain.com"> contact webmaster</a>.<br />
+  You may also want to visit us:<br />
+  Mozilla Foundation<br />
+  331 E Evelyn Ave<br />
+  Mountain View, CA 94041<br />
+  USA
+</address>
+Copy to Clipboard
+Result - 
+You can contact author at www.somedomain.com.
+If you see any bugs, please contact webmaster.
+You may also want to visit us:
+Mozilla Foundation
+331 E Evelyn Ave
+Mountain View, CA 94041
+USA
+7.<bdo>(Bidirectional Text Override) - overrides the current directionality of text, so that the text within is rendered in a different direction.
+Use the attribute 'dir' to give the direction of the text like rtl or ltr.
+EXAMPLE - <p>This text will go left to right.</p>
+<p><bdo dir="rtl">This text will go right to left.</bdo></p>
+8.<blockquote> (Block Quotation) - It is used to define a content which is taken from another source.
+HTML <blockquote> tag is used to define a block of text which is quoted from another source. The Browser usually displays the content within <blockquote> tag as indented text.
+If you want to insert a long quote then use <blockquote> and for short or inline quote use <q> tag.
+9.HTML quotes are used to put a short quotation on your website. To do so, you need to use HTML q tag and HTML blockquote tag.
+HTML q tag is used to put small quotation. To do so, write your text within <q>.............</q> tag.
+
+10.<cite>(Citation) - HTML <cite> tag specifies a citation, it provides reference or title to a creative work, quoted content, books, websites, a research paper, a blog-spot, painting, etc.
+The main purpose of adding <cite> element is to provide or identify the source of the quote or any content.
+To include a reference to the source of quoted material which is contained within a <blockquote> or <q> element, use the cite attribute on the element.
+Typically, browsers style the contents of a <cite> element in italics by default. To avoid this, apply the CSS font-style property to the <cite> element.
+EXAMPLE- Typically, browsers style the contents of a <cite> element in italics by default. To avoid this, apply the CSS font-style property to the <cite> element.
+11.HTML <code> tag is used to represent computer code. It is a phrase tag which defines a piece of computer code. By default, it is displayed in the browser's default monospace font (also known as fixed-width font).
+<ins> and <del> - HTML <ins> tag is used to represent the newly added text in an HTML document. It usually renders with an underline through the text, but it can be changed using CSS property.
+The <ins> tag is more useful when it is used with the <del> element as it represents the part of the text that has been deleted and <ins> represent the part of the text that has been inserted to the document.
+EXAMPLE:
+<p>  
+    If you will do <del>hard work </del> <ins>smart work</ins> then you will get success easily   
+</p> 
+Output: if you will do hard work(strikeout) smartwork(underline) then you will get success easily.
+12.<dfn> - HTML <dfn> tag also called as HTML definition tag. It is used to represent the term which is defined within context of definition phrase or sentence in an HTML document. The defining instance term usually the first term in a document.
+If a term is contained within the <dfn> element then browser understands that nearby text is the definition of the term.
+13.<kbd> - HTML <kbd> tag indicates the part of inline text which represents the user keyboard input, voice input, or any other text entry device input.
+The <kbd> text renders on the browser in default monospace font. It is used when a document needs to display the text which user should enter exactly from his keyboard.
+Example- <p>If you are using MS document then you can use shortcut <kbd>ctrl + s</kbd> to save your current document. </p>  
+14.<pre> if you use pre tag the browse will display the paragrah the same what you typr like space and linebreak.
+15.<samp> - if you want to say any sample or example use samp tag.
+The <samp> HTML element is used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console).
+16.<var> - HTML <var> tag is a phrase tag which is used to define the variable for a mathematical equation, or in the programming context.
+The content within <var> tag renders in italic font in most of the browsers, but it can be overridden using appropriate CSS.
+Following are some related elements of <var> tag, which can also be used for the same context:
+<code>: To determine the computer programming code.
+<kbd>: To determine the keyboard input.
+<samp>: To determine the sample output.
+
+
+
+HTML Link Tags:
+<a> and <base>
+1.<a> - The HTML anchor tag defines a hyperlink that links one page to another page. It can create hyperlink to other web page as well as files, location, or any URL. The "href" attribute is the most important attribute of the HTML a tag. and which links to destination page or URL.
+href attribute of HTML anchor tag:
+The href attribute is used to define the address of the file to be linked. In other words, it points out the destination page.
+2.<base> - HTML <base> tag is used to specify a base URI or URL to use for all relative links contained within an HTML document.
+Only one <base> element can be specified within a document, and it must be placed within <head> element. We can also specify how other links should open (in the same window, in another window, etc.) using the target attribute.
+
+
+
+HTML Image and Object Tags
+<img>, <area>, <map>, <param> and <object>
+1.<img> - HTML img tag is used to display image on the web page. HTML img tag is an empty tag that contains attributes only, closing tags are not used in HTML image element.
+EXample: <img src="animal.jpg" height="180" width="300" alt="animal image"> 
+he src attribute is required, and contains the path to the image you want to embed.
+The alt attribute holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility 
+2.<area> and <map> - The <map> HTML element is used with <area> elements to define an image map (a clickable link area).
+An image map is consist of an image with clickable areas, where you can click on the image, and it will open to new or the provided destination.
+The <map> tag can consist of more than one <area> elements which define the coordinates and type of the area.
+Example:  <img src="image1.png" usemap="#web">  
+<map name="web">  
+<area shape="rect" coords="66,117,131,168" href="https://www.javatpoint.com/html-tutorial">  
+<area shape="rect" coords="199,36,277,85" href="https://www.javatpoint.com/css-tutorial">  
+<area shape="rect" coords="330,107,406,159" href="https://www.javatpoint.com/bootstrap-tutorial">  
+<area shape="rect" coords="199,185,267,236" href="https://www.javatpoint.com/javascript-tutorial">  
+ </map>  
+3.<param> and object - HTML <object> tag is used to embed multimedia files on webpage. The <object> tag can include multimedia files such as video, audio, image, PDF, Java Applets, or another page on your page.
+HTML <param> tag also used with <object> tag to pass parameters to plugin which has been included with <object> tag.
+HTML <param> tag is used to pass the parameters to the object that has been embedded using <object> element.
+We can use more than one <param> tag within an <object> element in any order, but each tag must contain name and value attribute and should be placed at the start of the content.
+The <param> tag controls the behaviour of the <object> element using a different pair of the name of value attributes, such as autoplay, controller, etc.
+Syntax
+<param name=" " value="">  
+EXAMPLE: <object data="https://www.youtube.com/embed/JHq3pL4cdy4" >  
+<param name="controller" value="true">  
+
+
+HTML List Tags:
+<ul>, <ol>, <li>, <dl>, <dt> and <dd>
+1.<ul>(Unordered List or Bulleted List) - HTML Unordered List or Bulleted List displays elements in bulleted format . We can use unordered list where we do not need to display items in any particular order. 
+To represent different ordered lists, there are 4 types of attributes in <ul> tag.
+Type "disc"	This is the default style. In this style, the list items are marked with bullets.
+Type "circle"	In this style, the list items are marked with circles.
+Type "square"	In this style, the list items are marked with squares.
+Type "none"	In this style, the list items are not marked .
+ The type attribute is not supported in HTML5, instead of type you can use CSS property of list-style-type. Following is the example to show the CSS property for ul tag.
+ <ul style="list-style-type: square;">  
+    <li>HTML</li>  
+    <li>Java</li>  
+    <li>JavaScript</li>  
+    <li>SQL</li>  
+  </ul>  
+  2.<ol>(ordered list or numbered list) - HTML Ordered List or Numbered List displays elements in numbered format. The HTML ol tag is used for ordered list. We can use ordered list to represent items either in numerical order format or alphabetical order format, or any format where an order is emphasized. There can be different types of numbered list:
+Numeric Number (1, 2, 3)
+Capital Roman Number (I II III)
+Small Romal Number (i ii iii)
+Capital Alphabet (A B C)
+Small Alphabet (a b c)
+start attribute
+The start attribute is used with ol tag to specify from where to start the list items.
+EXAMPLE:<ol type="1" start="5"> : It will show numeric values starting with "5".
+3. <dl><dt><dd>
+dl-description list or definition list
+dt-data topic
+dd-data definition
+EXAMPLE: <dl>  
+  <dt>HTML</dt>  
+  <dd>is a markup language</dd>  
+  <dt>Java</dt>  
+  <dd>is a programming language and platform</dd>  
+ <dt>JavaScript</dt>  
+ <dd>is a scripting language</dd>  
+  <dt>SQL</dt>  
+  <dd>is a query language</dd>   
+</dl>  
+ 
+HTML Table Tags:
+table, tr, td, th, tbody, thead, tfoot, col, colgroup and caption
+
+<table>	It defines a table.
+<tr>	It defines a row in a table.
+<th>	It defines a header cell in a table.
+<td>	It defines a cell in a table.
+<caption>	It defines the table caption.
+<colgroup>	It specifies a group of one or more columns in a table for formatting.
+<col>	It is used with <colgroup> element to specify column properties for each column.
+<tbody>	It is used to group the body content in a table.
+<thead>	It is used to group the header content in a table.
+<tfooter>	It is used to group the footer content in a table.
+
+
+
+
+HTML Form Tags:
+form, input, textarea, select, option, optgroup, button, label, fieldset and legend
+
+HTML Scripting Tags:
+script and noscript
+
+
+
+
+
+
