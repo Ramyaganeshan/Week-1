@@ -1,0 +1,19 @@
+HTML DOM:-
+DOM(Document Object Model)
+The Document Object Model (DOM) is a programming interface for web documents. 
+The DOM defines a standard for accessing documents: 
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, 
+and style of a document."
+The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+It is called a Logical structure because DOM doesn’t specify any relationship between objects. 
+With DOM, we can easily access and manipulate tags, IDs, classes, Attributes, or Elements of HTML using commands or methods provided by the Document object.
+
+Dom can create the html code as a object(like a tree) make a copy of it so we can able to add or delete(like manipulating) elements, attributes, etc.
+
+How DOM is created?
+What is the DOM & How Does HTML Rendering Happen in Browsers ...
+Firstly, bytes are converted to HTML characters and then to Tokens. In the next step, Tokens are converted into nodes. Nodes are different objects with certain properties.
+ After the nodes are created, the DOM tree is created.
+ 
+ Using DOM, the JavaScript gets access to HTML as well as CSS of the web page and can also add behavior to the HTML elements.
+ so basically Document Object Model is an API that represents and interacts with HTML.
