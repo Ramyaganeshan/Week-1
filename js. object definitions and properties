@@ -120,6 +120,87 @@ objectName["property"]   // person["age"]
 EXAMPLE
 person["firstname"] + " is " + person["age"] + " years old.";
 
+Example 1
+person.firstname + " is " + person.age + " years old.";
+Example 2
+person["firstname"] + " is " + person["age"] + " years old.";
+
+
+Adding New Properties:
+You can add new properties to an existing object by simply giving it a value.
+
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+person.nationality = "English";
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.nationality + ".";
+
+
+Nested Objects:-
+Values in an object can be another object:
+
+Example
+myObj = {
+  name:"John",
+  age:30,
+  cars: {
+    car1:"Ford",
+    car2:"BMW",
+    car3:"Fiat"
+  }
+}
+You can access nested objects using the dot notation or the bracket notation:
+Example:
+const myObj = {
+  name: "John",
+  age: 30,
+  cars: {
+  car1: "Ford",
+  car2: "BMW",
+  car3: "Fiat"
+  }
+}
+document.getElementById("demo").innerHTML = myObj.cars.car2;
+
+
+Nested Arrays and Objects:-
+Values in objects can be arrays, and values in arrays can be objects:
+
+const myObj = {
+  name: "John",
+  age: 30,
+  cars: [
+    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+    {name:"BMW", models:["320", "X3", "X5"]},
+    {name:"Fiat", models:["500", "Panda"]}
+  ]
+}
+
+To access arrays inside arrays, use a for-in loop for each array:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
