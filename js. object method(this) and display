@@ -1,0 +1,151 @@
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+
+What is this?
+In JavaScript, the this keyword refers to an object.
+Which object depends on how this is being invoked (used or called).
+
+The this keyword refers to different objects depending on how it is used:
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.
+
+
+
+JavaScript Methods:-
+JavaScript methods are actions that can be performed on objects.
+A JavaScript method is a property containing a function definition.
+Methods are functions stored as object properties.
+
+Property	Value
+firstName	John
+lastName	Doe
+age	50
+eyeColor	blue
+fullName	function() {return this.firstName + " " + this.lastName;}
+
+
+Accessing Object Methods:-
+You access an object method with the following syntax:
+objectName.methodName()
+***The fullName property will execute (as a function) when it is invoked with ()***
+  If you access the fullName property, without (), it will return the function definition:                                                                           
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.getElementById("demo").innerHTML = person.fullName();                                                                               
+_____________________________________________________________________________________
+
+Display Objects:-
+
+How to Display JavaScript Objects?
+Displaying a JavaScript object will output [object Object].
+
+Example
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+doucment.getElementById("demo").innerHTML=person;
+OUTPUT: [object Object]
+
+
+Some common solutions to display JavaScript objects are:
+Displaying the Object Properties by name
+Displaying the Object Properties in a Loop
+Displaying the Object using Object.values()
+Displaying the Object using JSON.stringify()
+
+
+Displaying Object Properties:-
+The properties of an object can be displayed as a string:
+Example
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+document.getElementById("demo").innerHTML =
+person.name + "," + person.age + "," + person.city;
+
+
+Displaying the Object in a Loop:-
+The properties of an object can be collected in a loop:
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+};
+document.getElementById("demo").innerHTML = txt;
+
+
+Using Object.values():-
+Any JavaScript object can be converted to an array using Object.values()
+myArray is now a JavaScript array, ready to be displayed:
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+const myArray = Object.values(person);
+document.getElementById("demo").innerHTML = myArray;
+
+
+Using JSON.stringify():-
+Any JavaScript object can be stringified (converted to a string) with the JavaScript function JSON.stringify():
+myString is now a JavaScript string, ready to be displayed:
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+let myString = JSON.stringify(person);
+document.getElementById("demo").innerHTML = myString;
+Output: {"name":"John","age":30,"city":"New York"}
+
+JSON.stringify converts dates into strings
+JSON.stringify will not stringify functions
+That can be fixed if you convert the functions into strings before stringifying.
+It is also possible to stringify JavaScript arrays:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
