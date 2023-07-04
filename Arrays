@@ -170,8 +170,18 @@ The second parameter (1) defines how many elements should be removed.
 The slice()
 const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.slice(1, 3);
+____________________________________________________________________________________________________
 
+Array iteration:
+Iterating over an array means accessing each element of array one by one. 
+There may be many ways of iterating over an array in Java, below are some simple ways.
 
+Method 1: Using for loop:
+This is the simplest of all where we just have to use a for loop where a counter 
+variable accesses each element one by one.
+
+Method 2: Using for each loop :
+For each loop optimizes the code, save typing and time.
 
 
 
