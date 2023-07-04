@@ -1,0 +1,77 @@
+JavaScript strings are for storing and manipulating text.
+Whatever written inside the quotes is calls strings.
+You can use single or double quotes:
+
+Example
+let carName1 = "Volvo XC60";  // Double quotes
+let carName2 = 'Volvo XC60';  // Single quotes
+
+String Length:
+To find the length of a string, use the built-in length property:
+
+Example
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+document.getElementById("demo").innerHTML = length;
+OR
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = text.length;
+
+Escape Character:
+Because strings must be written within quotes, JavaScript will misunderstand this string:
+let text = "We are the so-called "Vikings" from the north.";
+The string will be chopped to "We are the so-called ".
+The solution to avoid this problem, is to use the backslash escape character.
+The bckslash (\) escape character turns special characters into string characters:
+
+\'	'	Single quote
+\"	"	Double quote
+\\	\	Backslash
+EXAMPLE- let text = "We are the so-called \"Vikings\" from the north.";
+let text= 'It\'s alright.';
+____________________________________________________________________________________________________________
+
+String Length:-
+
+Extracting String Parts:
+There are 3 methods for extracting a part of a string:
+slice(start, end)
+substring(start, end)
+substr(start, length)
+String slice()
+
+1.slice() extracts a part of a string and returns the extracted part in a new string.
+The method takes 2 parameters: start position, and end position (end not included).
+Example
+Slice out a portion of a string from position 7 to position 13:
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7, 13);
+
+If you omit the second parameter, the method will slice out the rest of the string:
+If a parameter is negative, the position is counted from the end of the string:
+
+2.substring()
+substring() is similar to slice().
+The difference is that start and end values less than 0 are treated as 0 in substring().
+If you omit the second parameter, substring() will slice out the rest of the string.
+
+String substr()
+substr() is similar to slice().
+The difference is that the second parameter specifies the length of the extracted part.
+
+Replacing String Content
+The replace() method replaces a specified value with another value in a string:
+
+Example
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+Note
+The replace() method does not change the string it is called on.
+The replace() method returns a new string.
+The replace() metho replaces only the first match
+
+
+
+
+
+
