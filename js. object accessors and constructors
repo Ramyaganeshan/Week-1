@@ -38,8 +38,7 @@ person.lang = "en";
 
 // Display data from the object:
 document.getElementById("demo").innerHTML = person.language;
-
-
+______________________________________________________________________________________________________
 
 
 
