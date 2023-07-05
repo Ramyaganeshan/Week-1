@@ -93,6 +93,93 @@ x and y are the parameters while 2 and 3 are the arguments here.
 A parameter is one of the variables in a function. 
 And when a method is called, the arguments are the data you pass into the method's parameters.
 
+________________________________________________________________________________________________________
+
+Function Invocation:
+The code inside a JavaScript function will execute when "something" invokes it.
+
+Invoking a JavaScript Function:
+The code inside a function is not executed when the function is defined.
+The code inside a function is executed when the function is invoked.
+It is common to use the term "call a function" instead of "invoke a function".
+
+function myFunction(a, b) {
+  return a * b;
+}
+myFunction(10, 2);           // Will return 20
+
+_________________________________________________________________________________________________________
+
+Function Call:
+With the call() method, you can write a method that can be used on different objects.
+
+Example:
+cont person={
+  firstname : "john",
+  lastname  : "doe",
+      age   : 50,
+  fullname  : function(){
+   retrun this.firstname + " " +this.lastname;
+}}
+document.getElementbyId("demo").innerHTML = person.fullname();
+
+
+with call() you can call a method that can be used on different objects.
+EXAMPLE:
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+const person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+
+// This will return "John Doe":
+person.fullName.call(person1);
+OUTPUT: John Doe
+
+
+const person={
+fullname : function(){
+retrun this.firstname + " " + this.lastname;
+}
+}
+{
+const person1 = {
+firstname : "ramya",
+lastname  : "ganeshan"
+}
+const person2 = {
+firstname : "jothi",
+lastname  : 'sri'
+}
+document.getElementById("demo").innerHTML = person.fullname.call(person2);
+
+
+
+The call() method can accept arguments:
+Example
+const person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+person.fullName.call(person1, "Oslo", "Norway");
+
+
+
 
 
 
