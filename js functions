@@ -84,12 +84,14 @@ function functionName(parameter1, parameter2, parameter3) {
 Function parameters are the names listed in the function definition.
 Function arguments are the real values passed to (and received by) the function.
 
-
-  
-
-
-
-
+ function add(x, y){
+	return x + y
+}
+add(2, 3)
+We have introduced x and y here and changed the location of the 2 and 3. 
+x and y are the parameters while 2 and 3 are the arguments here.
+A parameter is one of the variables in a function. 
+And when a method is called, the arguments are the data you pass into the method's parameters.
 
 
 
