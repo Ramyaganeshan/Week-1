@@ -1,0 +1,128 @@
+JavaScript Function Definitions:
+
+JavaScript functions are defined with the function keyword.
+You can use a function declaration or a function expression.
+
+1.Function Declarations
+  you learned that functions are declared with the following syntax:
+  function functionName(parameters) {
+  // code to be executed
+  }
+Declared functions are not executed immediately.
+They are "saved for later use", and will be executed later, when they are invoked (called upon).
+Example:
+let x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+function myFunction(a, b) {
+  return a * b;
+}
+
+
+2.Function Expressions
+A JavaScript function can also be defined using an expression.
+A function expression can be stored in a variable:
+Example
+const x = function (a, b) {return a * b};
+After a function expression has been stored in a variable, the variable can be used as a function:
+const x = function (a, b) {return a * b};
+document.getElementById("demo").innerHTML = x(4, 3);
+
+The function above is actually an anonymous function (a function without a name).
+Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+-----------------------------------------------------------------------------------------------------------------
+
+Function Hoisting:
+Hoisting is JavaScript's default behavior of moving declarations to the top.
+
+JavaScript Declarations are Hoisted:
+In JavaScript, a variable can be declared after it has been used.
+In other words; a variable can be used before it has been declared.
+Example 1 gives the same result as Example 2:
+
+x = 5; // Assign 5 to x
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x;                     // Display x in the element
+var x; // Declare x
+
+Example 2
+var x; // Declare x
+x = 5; // Assign 5 to x
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x; // Display x in the element
+
+To understand this, you have to understand the term "hoisting".
+Hoisting is JavaScript's default behavior of moving all declarations to the top of the 
+current scope (to the top of the current script or the current function).
+
+The let and const Keywords-
+Variables defined with let and const are hoisted to the top of the block, but not initialized.
+Meaning: The block of code is aware of the variable, but it cannot be used until it has been declared.
+Using a let variable before it is declared will result in a ReferenceError.
+Example
+This will result in a ReferenceError:
+carName = "Volvo";
+let carName;
+
+
+Hoisting applies to variable declarations and to function declarations.
+Because of this, JavaScript functions can be called before they are declared:
+myFunction(5);
+function myFunction(y) {
+  return y * y;
+}
+*Functions defined using an expression are not hoisted.*
+
+_________________________________________________________________________________________________________
+
+Parameters and Arguments:-
+
+  functions can have parameters:
+function functionName(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+
+Function parameters are the names listed in the function definition.
+Function arguments are the real values passed to (and received by) the function.
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
