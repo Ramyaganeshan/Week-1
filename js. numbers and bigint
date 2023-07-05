@@ -1,0 +1,141 @@
+JavaScript Numbers:-
+JavaScript has only one type of number. Numbers can be written with or without decimals.
+Example
+let x = 3.14;   
+let y = 3;  
+Extra large or extra small numbers can be written with scientific (exponent) notation.
+Example
+let x = 123e5;    // 12300000
+let y = 123e-5;   // 0.00123
+
+Unlike many other programming languages, 
+JavaScript does not define different types of numbers, like integers, short, long, floating-point etc.
+JavaScript numbers are always stored as double precision floating point numbers.
+
+
+ * JavaScript uses the + operator for both addition and concatenation.
+  Numbers are added. Strings are concatenated. *
+
+If you add two numbers, the result will be a number:
+Example
+let x = 10;
+let y = 20;
+let z = x + y;
+OUTPUT:20
+
+If you add two strings, the result will be a string concatenation:
+Example
+let x = "10";
+let y = "20";
+let z = x + y;
+OUTPUT:1020
+
+If you add a number and a string, the result will be a string concatenation:
+Example
+let x = 10;
+let y = "20";
+let z = x + y;
+OUTPUT:1020
+
+
+JavaScript will try to convert strings to numbers in all numeric operations:
+
+This will work:
+let x = "100";
+let y = "10";
+let z = x / y;
+
+This will also work:
+let x = "100";
+let y = "10";
+let z = x * y;
+
+And this will work:
+let x = "100";
+let y = "10";
+let z = x - y;
+
+But this will not work:
+let x = "100";
+let y = "10";
+let z = x + y;
+JavaScript uses the + operator to concatenate the strings.
+
+
+NaN - Not a Number:-
+NaN is a JavaScript reserved word indicating that a number is not a legal number.
+Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+
+Example
+let x = 100 / "Apple";
+
+However, if the string is numeric, the result will be a number:
+
+Example
+let x = 100 / "10";
+__________________________________________________________________________________
+
+JavaScript BigInt:-
+JavaScript BigInt variables are used to store big integer values 
+that are too big to be represented by a normal JavaScript Number.
+
+JavaScript integers are only accurate up to 15 digits:
+let x = 999999999999999;
+let y = 9999999999999999;  
+OUTPUT:
+999999999999999
+10000000000000000
+With this standard, large integer cannot be exactly represented and will be rounded.
+
+To create a BigInt, append n to the end of an integer or call BigInt():
+Both is same:
+let x = 1234567890123456789012345n;
+let y = BigInt(1234567890123456789012345)
+
+BigInt is the second numeric data type in JavaScript (after Number).
+
+With BigInt the total number of supported data types in JavaScript is 8:
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+BigInt Operators:
+Operators that can be used on a JavaScript Number can also be used on a BigInt.
+BigInt Multiplication Example
+let x = 9007199254740995n;
+let y = 9007199254740995n;
+let z = x * y;
+
+Arithmetic between a BigInt and a Number is not allowed (type conversion lose information).
+But you can do like this
+  let x = 5n;
+let y = Number(x) / 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
