@@ -1,0 +1,141 @@
+JavaScript Maps:
+
+A Map holds key-value pairs where the keys can be any datatype.
+A Map remembers the original insertion order of the keys.
+A Map has a property that represents the size of the map.
+
+
+How to Create a Map:-
+You can create a JavaScript Map by:
+Passing an Array to new Map()
+Create a Map and use Map.set()
+
+1.new Map()
+You can create a Map by passing an Array to the new Map() constructor.
+Example:
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+OR
+
+2.Map.set()
+You can add elements to a Map with the set() method:
+Example
+// Create a Map
+const fruits = new Map();
+// Set Map Values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+
+*The set() method can also be used to change existing Map values*
+Example:
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+fruits.set("apples", 200);
+_____________________________________________________________
+
+Map Methods:
+The get() method gets the value of a key in a Map:
+Example
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+document.getElementById("demo").innerHTML = fruits.get("apples");
+
+
+Map.size
+The size property returns the number of elements in a Map:
+Example
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+document.getElementById("demo").innerHTML = fruits.size;
+OUTPUT: 3
+
+
+Map.delete()
+The delete() method removes a Map element:
+Example
+fruits.delete("apples");
+
+Map.clear()
+The clear() method removes all the elements from a Map:
+Example
+fruits.clear();
+
+
+Map.has()
+The has() method returns true if a key exists in a Map:
+Example
+fruits.has("apples");
+
+
+Differences between JavaScript Objects and Maps:
+Object                                  	Map
+Not directly iterable                	Directly iterable
+Do not have a size property         	Have a size property
+Keys must be Strings (or Symbols)	    Keys can be any datatype
+Keys are not well ordered	            Keys are ordered by insertion
+Have default keys	                    Do not have default keys
+
+
+Map.forEach():
+The forEach() method invokes a callback for each key/value pair in a Map:
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+let text = "";
+fruits.forEach (function(value, key) {
+  text += key + ' = ' + value + "<br>"
+})
+document.getElementById("demo").innerHTML = text;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
